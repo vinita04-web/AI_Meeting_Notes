@@ -1,11 +1,6 @@
 import os
 import tempfile
 
-# 1. FFmpeg Path Configuration (Must be at the very top before importing whisper)
-ffmpeg_path = r"C:\Users\Admin\Downloads\ffmpeg-8.1.1-essentials_build\bin"
-if ffmpeg_path not in os.environ["PATH"]:
-    os.environ["PATH"] += os.pathsep + ffmpeg_path
-
 import streamlit as st
 import whisper
 
